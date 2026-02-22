@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goodlife Header</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- Top announcement bar -->
+    <div class="top-bar">
+        Free Delivery For orders above 10,500/=.
+    </div>
+
+    <!-- Main header -->
+    <div class="main-header">
+
+        <!-- Logo section -->
+        <div class="logo">
+            <span class="good">Good</span><span class="life">life</span>
+            <div class="sub-text">Pharmacy Health Beauty</div>
+        </div>
+
+        <!-- Icons section -->
+        <div class="icons">
+
+            <div class="icon" onclick="accountClick()">
+                👤
+            </div>
+
+            <div class="icon cart" onclick="cartClick()">
+                🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="icon" onclick="menuClick()">
+                ☰
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-section">
+
+        <input 
+        type="text" 
+        placeholder="Search products..." 
+        id="search-input">
+
+        <button onclick="searchProduct()">Search</button>
+
+    </div>
+
+</header>
+
+<script src="script.js"></script>
+
+</body>
+</html>
